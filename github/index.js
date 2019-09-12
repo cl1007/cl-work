@@ -1,3 +1,3 @@
-document.body.onclick = function(){
-    
+document.getElementById("btn").onclick = function(){
+    btn.style.backgroundColor="pink";
 }
