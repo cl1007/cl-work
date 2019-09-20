@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			//1.封装一个用于计算的函数
+			//2.通过prompt()函数,收取用户输入的数字和计算方式
+			//3.通过函数进行计算,并直接弹出结果
+			//4.请优先使用三目运算符(不使用也可以)
+			var num1=parseInt(prompt('请输入第一个数字'));
+			var num2=parseInt(prompt('请输入第二个数字'));
+			var zuo=prompt('请输入计算方式');
+           if(!(isNaN(num1) && isNaN(num2))){
+             if(zuo=="+"){
+               num=num1+num2;
+             }else if(zuo=="-"){
+               num=num1-num2;
+             }else if(zuo=="*"){
+               num=num1*num2;
+             }else if(zuo=="/"){
+               num=num1/num2;
+             }
+          }else{
+               alert("请输入数字");
+            }
+               alert(num);
+		</script>
+	</body>
+</html>
