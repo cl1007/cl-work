@@ -1,0 +1,210 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+/*头部部分*/
+.header{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	background-color:rgba(63,81,181,1);
+}
+.header-land{
+	width: 1295.2px;
+	height: 200px;
+	margin: 0 auto;
+	position: relative;
+}
+.land-tu{
+	width: 170.71px;
+	height: 173.6px;
+	margin-left: 550.24px;
+	margin-bottom: 15px;
+	padding-top: 15px;
+	display: block;
+    position: relative;
+}
+.tu-img{
+	width: 120px;
+	height: 120px;
+	margin: 15px auto;
+	margin-left: 20px;
+}
+.tu-p{
+	height: 13.6px;
+	display: block;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-family: "Helvetica","Arial",sans-serif;
+    color: white;
+    font-weight: 400;
+}
+.land-biao{
+	/*width: 1295.2px;*/
+	width: 100%;
+	height: 45px;
+	margin: 0;
+	padding: 0;
+    background: rgba(58,75,167,1);
+}
+.biao-ul{
+	width: 900px;
+	height: 100%;
+	margin: 0 auto;
+}
+.biao-ul li{
+	list-style: none;
+	float: left;
+	margin:12px 60px;
+	color: white;
+}
+/*主体部分*/
+.container{
+	width: 100%;
+	 height: 809.71px;
+	background-color: #fefefe;
+}
+.container-all{
+	margin: 1em auto;
+   height: 809.71px;
+}
+.all-site{
+	width: 900px;
+	height: 745px;
+    margin: auto;
+}
+.site-nav{
+	padding-bottom: 2em;
+	margin: 8px;
+	border: 1px solid rgba(221,221,221,1);
+}
+.site-title{
+	margin-left: 15px;
+}
+.site-title h1{
+	font-weight: 300;
+	font-size: 25px;
+    font:"微软雅黑";
+}
+.site-picture img{
+	width: 884px;
+	height: 248px;
+    height: auto;
+}
+.site-copy{
+	width: 619.75px;
+	height: 435.8px;
+	padding: 8px;
+	margin: 0 auto;
+	display:flex;
+}
+.copy-input{
+	width: 587.75px;
+	height: 403.8px;
+	padding: 8px;
+}
+.site-input{
+	color: rgba(0,0,0,.54);
+    font-size: 1rem;
+    line-height: 18px;
+    overflow: hidden;
+    padding: 16px;
+    width: 90%;
+}
+/*:-ms-input-placeholder{
+	color: #e0e0e0;
+}*/
+.input-name{
+	border: none;
+    border-bottom: 1px solid rgba(0,0,0,.12);
+    display: block;
+    font-size: 16px;
+    font-family: "Helvetica","Arial",sans-serif;
+    margin: 0;
+    padding: 4px 0;
+    width: 100%;
+    background: 0 0;
+    text-align: left;
+    /*color: inherit;*/
+    margin-top: 35px;
+}
+.input-email{
+	border: none;
+    border-bottom: 1px solid rgba(0,0,0,.12);
+    display: block;
+    font-size: 16px;
+    font-family: "Helvetica","Arial",sans-serif;
+    margin: 0;
+    padding: 4px 0;
+    width: 100%;
+    background: 0 0;
+    text-align: left;
+    /*color: inherit;*/
+    margin-top: 35px;
+}
+.input-note{
+	/*color: #e0e0e0;*/
+	position: absolute;
+	margin-top:30px;
+}
+.input-text{
+	border: none;
+    border-bottom: 1px solid rgba(0,0,0,.12);
+    display: block;
+    font-size: 16px;
+    font-family: "Helvetica","Arial",sans-serif;
+    margin: 0;
+    padding: 4px 0;
+    width: 100%;
+    background: 0 0;
+    text-align: left;
+    /*color: inherit;*/
+    margin-top: 60px;
+}
+
+.site-anniu{
+	color: rgb(255,255,255);
+    background-color: rgb(255,64,129);
+    height: 36px;
+    width: 82.93px;
+	display: block;
+    left: 0;
+    border: none;
+    top: 0;
+    z-index: 0;
+    overflow: hidden;
+}
+.footer{
+	padding: 32px 16px;
+	margin-top: 20px;
+    color: #9e9e9e;
+    background-color: #424242;
+}
+.footer-wei{
+	width: 620.83px;
+	height: 36px;
+	margin: 0 auto;
+	display: block;
+	font-weight: 400;
+	/*float: left;*/
+	display: flex;
+}
+.wei-work{
+	color: #FFFFFF;
+}
+.footer-wei a{
+	text-decoration: none;
+  text-align: left;
+}
+.wei-text{
+	color: #FFFFFF;
+	border-bottom: 1px dotted #aaa;
+}
+.wei-pai{
+	color: inherit;
+	white-space: nowrap;
+	margin-left: 16px;
+}
