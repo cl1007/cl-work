@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="text"id="in1"/>
+		<button id="btn1">签到</button>
+		<button id="btn2">还有哪个小可爱？</button>
+		<div id="mydiv">
+		</div>
+		<script>
+        
+        var in1 = document.getElementById('in1');
+        var btn1 = document.getElementById('btn1');
+        var btn2 = document.getElementById('btn2');
+        var mydiv = document.getElementById('mydiv');
+        var aa = ['大哥','陈莉','王书雅','小五','超微','郭楚楚'];
+        var bb = [];
+        btn1.onclick = function(){
+            bb.push(in1.value);
+            btn2.onclick = function(){
+                var cc = aa.join('');
+                var reg = new RegExp(bb.join('|'),'g');
+                mydiv.innerHTML = cc.replace(reg,'');
+            }
+        }
+       
+    
+    
+		</script>
+	</body>
+</html>
