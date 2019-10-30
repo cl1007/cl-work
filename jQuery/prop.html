@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="jquery.js"></script>
+	</head>
+	<body>
+		<input type="checkbox" id="qu" value="" />all <br />
+		<input type="checkbox" id="hah" value="" />all <br />
+		<input type="checkbox" name="ball" id="a"/>足球
+		<input type="checkbox" name="ball" id="a"/>篮球
+		<input type="checkbox" name="ball" id="a"/>排球
+		<script>
+//			console.log($("#che").prop("checked"))
+            $("#a").change(function(){
+            	if($("#a").prop('checked')){
+            		$("[name=ball]").prop('checked',false)
+            	}else{
+            		$("[name=ball]").prop('checked',true)
+            	}
+            })
+            
+            $("#hah").change(function(){
+            	$("#a").prop('checked',false)
+//          	$("#a").prop('checked',false)
+            })
+		</script>
+	</body>
+</html>

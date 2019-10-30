@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="jquery.js"></script>
+	</head>
+	<body>
+		<ul>
+			<li>l1</li>
+			<li>l2</li>
+			<li>l3</li>
+			<li>l4</li>
+			<li>l5</li>
+		</ul>
+		<div>
+			<p>
+				<span>热火坑</span>
+				<a href="#">哈哈哈</a>
+			</p>
+			<p>
+				<i>哈哈哈哈</i>
+			</p>
+		</div>
+		<script>
+			$("div p").css({"color":"red"})
+			$("div p:nth-child(1) a").css({"color":"blue"})
+			$("li:nth-child(4)").css({"color":"gray"})
+		</script>
+	</body>
+</html>
