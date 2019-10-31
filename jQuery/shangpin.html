@@ -1,5 +1,5 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
@@ -27,7 +27,7 @@
    	  		<input type="number" id="nb1" value="1">
         </td>
    	  	<td>
-   	  		单价：￥9999
+   	  		单价：￥3746
         </td>
    	  	<td>
    	  		合计：<b id="d1"></b>元
@@ -41,7 +41,7 @@
    	  		 <input type="number" id="nb2" value="1">
    	  	</td>
    	  	<td>
-   	  		单价：￥555
+   	  		单价：￥3279
    	  	</td>
    	  	<td>
    	  		合计：<b id="d2"></b>元
@@ -52,9 +52,9 @@
     <script>
         var a = 0;
         var b = 0;
-        $('#d1').html($('#nb1').val() * 9999);
+        $('#d1').html($('#nb1').val() * 3746);
         $('#nb1').change(function () {
-            $('#d1').html($('#nb1').val() * 9999);
+            $('#d1').html($('#nb1').val() * 3746);
             if (a == 1 && b == 1) {
                 $('#d3').html(Number($('#d1').html()) + Number($('#d2').html()));
             } else if (a == 1 && b == 0) {
@@ -65,9 +65,9 @@
                 $('#d3').html('0');
             }
         })
-        $('#d2').html($('#nb2').val() * 9999);
+        $('#d2').html($('#nb2').val() * 3746);
         $('#nb2').change(function () {
-            $('#d2').html($('#nb2').val() * 555);
+            $('#d2').html($('#nb2').val() * 3279);
             if (a == 1 && b == 1) {
                 $('#d3').html(Number($('#d1').html()) + Number($('#d2').html()));
             } else if (a == 1 && b == 0) {
