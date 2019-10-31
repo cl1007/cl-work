@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="jquery.js"></script>
+	</head>
+	<body>
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+		</ul>
+		<script>
+			            //参数一:索引值,参数二:当前元素
+			$('li').each(function(i,v){
+				console.log(v)
+			})
+			var arr=['a','b','c']
+			var obj={q:'q1',w:'w1'}
+			$(obj).each(function(i,v){
+				console.log(i)
+				console.log(v)
+			})
+		</script>
+	</body>
+</html>
