@@ -1,0 +1,3408 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>飞机票查询-机票预订、酒店预订查询、客栈民宿、旅游度假、门票签证【飞猪旅行】</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+	</head>
+	<body>
+		<!--飞猪1.头部部分-->
+		<div class="header">
+			<!--1.1登陆头部 商家中心...-->
+			<div class="header-land">
+				<div class="header-land-left">
+					<ul class="list">
+						<li>
+							<!--1.1.1图标-->
+					    <a href="#">飞猪</a>
+						</li>
+						<li>
+							<!--1.1.2文字-->
+							<p class="play">Hi,最近想去哪里玩?</p>
+						</li>
+						<li>
+							<!--1.1.3登陆-->
+							<a href="denglu.html">请登录</a>
+						</li>
+						<li>
+							<!--1.1.4注册-->
+							<a href="zhuce.html">免费注册</a>
+						</li>
+					</ul>
+				</div>
+				<div class="header-land-right">
+					<!--1.1.3客户端 购物车列表-->
+					<ul class="vocabulary">
+						<li><a href="#">手机客户端</a></li>
+						<li><a href="#">我的淘宝</a></li>
+						<li><a href="#">购物车0</a></li>
+						<li><a href="#">收藏夹</a></li>
+						<li>|</li>
+						<li><a href="#">服务中心</a></li>
+						<li><a href="#">商家中心</a></li>
+						<li><a href="#">淘宝</a></li>
+						<li><a href="#">网址导航</a></li>
+				</div>
+			</div>
+		</div>
+		<p style="clear: both;"></p>
+			<!--1.2搜索框 logo+飞猪热线-->
+			<div class="header-trip">
+				<div class="header-content">
+						<!--1.2.1 logo图-->
+						<div class="header-logo">
+							<img src="img/chen.png"/>
+						</div>
+						<!--1.2.2 宝贝 店铺-->
+						<div class="header-search">
+							<button class="header-search-treasure">宝贝</button>
+							<button class="header-search-shop">店铺</button>
+						</div>
+						<!--1.2.3 搜索框-->
+						<div class="header-input">
+						  <input maxlength="40" id="textsearch" placeholder=目的地/酒店/景点/签证等  />
+						  <img src="img/QQ图片20190611090759.png"/>
+						</div>
+					    <!--1.2.4飞猪热线-->
+					    <div class="header-telephone">
+					    	<div class="text">
+					    		<img src="img/QQ图片20190611094443.jpg" />
+					    		客服中心
+					    	</div>
+					    	<div class="look">
+					    		点击查看
+					    	</div>
+					    </div>
+				</div>
+			</div>
+			<!--1.3首页 12个列表-->
+		<div class="trip-header-box">
+			<div class="trip-nav-box">
+				<nav class="header-box">
+					<ul class="header-list">
+						<li><a href="#"><span class="plist">首页</span></a></li>
+						<li><a href="#"><span class="plist">酒店</span></a></li>
+						<li><a href="#"><span class="plist">客栈公寓</span></a></li>
+						<li><a href="#"><span class="plist">国内机票</span></a></li>
+						<li><a href="#"><span class="plist">港澳台/国际机票</span></a></li>
+						<li><a href="#"><span class="plist">旅游度假</span></a></li>
+						<li><a href="#"><span class="plist">景点门票</span></a></li>
+						<li><a href="#"><span class="plist">火车票</span></a></li>
+						<li><span class="plist">|</span></li>
+						<li><a href="#"><span class="plist">团购特卖</span></a></li>
+						<li><a href="#"><span class="plist">目的地</span></a></li>
+						<li><span class="plist">|</span></li>
+						<li><a href="#"><span class="plist">飞猪国际</span></a></li>
+						<li><span class="plist">|</span></li>
+						<li><a href="#"><span class="plist">我的旅行</span></a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<!--飞猪2.主体部分-->
+		<div class="fliggy">
+			<div class="container">
+		<!--2.1旅行首页搜索框 出发城市 到达城市+轮播图-->
+		    <div class="search-all">
+		    	<!--2.1.1左侧 机票 火车票等-->
+               <div class="search-city">
+               	 <div class="city-bank">
+		    		<ul class="black-box">
+		    			<li id="plant">机票</li>
+		    			<li>火车票</li>
+		    			<li>酒店客栈</li>
+		    			<li>旅游度假</li>
+		    			<li>门票</li>
+		    			<li>签证</li>
+		    			<li>旅行用车</li>
+		    		</ul>
+		    	</div>
+		    	<!--2.1.2中间 国内城市 国际城市-->
+		    	<div class="search-content">
+		    		<!--1国内城市-->
+		    		<div class="nav-sub">
+		    			<ul class="tab-city">
+		    				<li id="city-line">国内城市</li>
+		    				<li>国际城市/港澳台</li>
+		    				<li>国内特价</li>
+		    				<li>国际/港澳台特价</li>
+		    			</ul>
+		    		</div>
+		    		<!--2买票搜索框-->
+		    		<div class="nav-start">
+		    			<div class="button">
+		    				<label>
+		    					<input type="radio" name="" id="" checked="checked" value="0" />
+		    					单程
+		    				</label>
+		    				<label>
+		    					<input type="radio" name="" id="" value="1" />
+		    					往返
+		    				</label>
+		    				<p id="rebook">我的订单/退票改签</p>
+		    			</div>
+		    			<div class="change-city">
+		    				<p id="city-leave">出发城市:</p>
+		    			    <p id="date-leave">出发日期:</p>
+		    			    <input id="city-go" placeholder="城市名"/>
+		    			    <img src="img/QQ图片20190617114109.png" class="change-img"/>
+		    			    <input id="city-go-date" placeholder="yyyy-mm-dd"/>
+		    			    <p id="city-reach">到达城市:</p>
+		    			    <p id="date-back">返程日期:</p>
+		    			    <input id="city-return" placeholder="城市名"/>
+		    			    <input id="city-return-date" placeholder="yyyy-mm-dd"/>
+		    			</div>
+		    			
+		    		   <!--安心票-->
+		    		   <div class="">
+		    			 <!--1图片-->
+		    			 <div class="bank-img">
+		    			 	<img src="img/TB1NQ8jQlLoK1RjSZFuXXXn0XXa-184-36.png"/>
+		    			 </div>
+		    			 <!--2搜索框-->
+		    			 <div class="bank-input">	    			 	
+		    			 		<button class="search-yellow">搜索</button>	    			 	
+		    			 </div>
+		    		   </div>
+		    	    </div>
+		    	    <!--3价格保障-->
+		    	    <div class="search-ensure">
+		    	    	<div class="ensure-money">		    	
+		    	    		<ul class="sub-ensure">
+		    	    			<li><img src="img/QQ图片20190617164004.jpg"/></li>
+		    	    			<li>价格保障</li>
+		    	    			<li>|</li>
+		    	    			<li>出票保障</li>
+		    	    			<li>|</li>
+		    	    			<li>出行保障</li>
+		    	    			<li>|</li>
+		    	    			<li>信息修改保障</li>
+		    	    			<li>|</li>
+		    	    			<li>改签保障</li>
+		    	    			<li>|</li>
+		    	    			<li>报销保障</li>
+		    	    		</ul>
+		    	    	</div>
+		    	    </div>
+		    	</div>
+              </div>
+		    	
+		    	<!--2.1.3右侧 静态轮播图-->
+		    	<div class="carousel-state">
+		    		<div class="carousel-img">
+		    			<img src="img/TB1GEaYcRGw3KVjSZFDXXXWEpXa-490-300.jpg"/>
+		    			<ul class="indicators">
+		    			<li></li>
+		    			<li></li>
+		    			<li></li>
+		    			<li class="active"></li>
+		    			<li></li>
+		    			<li></li>
+		    		</ul>
+		    		</div>
+		    	</div>
+		    </div>
+		    <p style="clear: both;"></p>
+		<!--2.2飞猪特卖-->
+		    <div class="trippig-choice">
+		    	<div class="choice-mod">
+		    		<!--上 飞猪特卖-->
+		    		<div class="trip-plant">
+		    			<!--1飞猪特卖-->
+		    			<div class="pig-sell">
+		    				<img src="img/QQ图片20190618085902.jpg"/>
+		    			    <h2>飞猪特卖</h2>
+		    			</div>
+		    			<!--2三个ul列表-->
+		    			<div class="pig-bill">
+		    				<ul id="pig-bill-li">
+		    					<li id="bill-tab">精选特卖</li>
+		    					<li>优惠机票</li>
+		    					<li>飞猪专线</li>
+		    				</ul>
+		    			</div>
+		    			<!--3更多特价-->
+		    			<div class="pig-more">
+		    				<p id="more-price">更多特价</p>
+		    				<img src="img/QQ图片20190618091031.png"/>
+		    			</div>
+		    		</div>
+		    		<!--下 江浙沪+图片-->
+		    		<div class="trip-city">
+		    			<div class="city-sub">
+		    				<!--1.江浙沪-->
+		    				<div class="sub-text">
+		    					<!--江浙沪-->
+		    					<div class="sub-left">
+		    						<div class="sub-pull">
+		    							江浙沪
+		    						</div>
+		    						<p>ˇ</p>
+		    					</div>
+		    					<!--出境尾单+境内特惠-->
+		    					<div class="sub-list">
+		    						<a href="" id="list-sel">出境尾单</a>
+		    						<a href="">境内特惠</a>
+		    					</div>
+		    				</div>
+		    		         <!--2.图片-->
+		    		         <div class="trip-warp">		    		     
+		    		         	<!--左侧八个图片-->
+		    		         	<div class="warp-con">
+		    		         		<ul class="warp-all">
+		    		         			<li>
+		    		         				<div class="warp-img">
+		    		         					<img src="img/TB1VtisxkvoK1RjSZFwSuwiCFXa.jpg_230x230.jpg"/>
+		    		         					<div class="warp-info">
+		    		         					  <span class="destination">皮皮岛</span>
+		    		         				    </div>
+		    		         				</div>
+		    		         				<div class="item-info">
+		    		         					<div class="item-title">【尾单】普吉岛攀牙湾皮皮岛6天5晚跟团游 飞猪海岛游含往返</div>
+		    		         					<div class="item-tag"></div>
+		    		         					<div class="item-price">
+		    		         						<div class="pi-price">
+		    		         							<em>¥</em>
+		    		         							1860
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出149件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+		    		         			</li>
+		    		         			<li>
+		    		         				<div class="warp-img">
+		    		         					<img src="img/TB1Rb8NcSzqK1RjSZFjSuvlCFXa.jpg_230x230.jpg"/>
+		    		         					<div class="warp-info">
+		    		         					  <span class="destination">普吉</span>
+		    		         				    </div>
+		    		         				</div>
+		    		         				<div class="item-info">
+		    		         					<div class="item-title">泰国普吉岛6天纯玩2天半自助游含机票</div>
+		    		         					<div class="item-tag"></div>
+		    		         					<div class="item-price">
+		    		         						<div class="pi-price">
+		    		         							<em>¥</em>
+		    		         							2660
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出248件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+		    		         			</li>
+		    		         			<li>
+		    		         				<div class="warp-img">
+		    		         					<img src="img/TB1J877nCzqK1RjSZFpSuukSXXa.jpg_230x230.jpg"/>
+		    		         					<div class="warp-info">
+		    		         					  <span class="destination">芭提雅海滩</span>
+		    		         				    </div>
+		    		         				</div>
+		    		         				<div class="item-info">
+		    		         					<div class="item-title">全国直飞曼谷芭提雅6天5晚跟团含机票0自费游艇出海浮潜泰国</div>
+		    		         					<div class="item-tag"></div>
+		    		         					<div class="item-price">
+		    		         						<div class="pi-price">
+		    		         							<em>¥</em>
+		    		         							2760
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出128件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+		    		         			</li>
+		    		         			<li>
+		    		         				<div class="warp-img">
+		    		         					<img src="img/TB1Oi_newHqK1RjSZJnSuvNLpXa.jpg_230x230.jpg"/>
+		    		         					<div class="warp-info">
+		    		         					  <span class="destination">曼谷</span>
+		    		         				    </div>
+		    		         				</div>
+		    		         				<div class="item-info">
+		    		         					<div class="item-title">飞猪专线 泰国旅游纯玩团 曼谷芭堤雅6天跟团游 升级国际五星</div>
+		    		         					<div class="item-tag"></div>
+		    		         					<div class="item-price">
+		    		         						<div class="pi-price">
+		    		         							<em>¥</em>
+		    		         							3299
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出135件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+		    		         			</li>
+		    		         			<li>
+		    		         				<div class="warp-img">
+		    		         					<img src="img/TB15.OznwHqK1RjSZFgSuu7JXXa.jpg_230x230.jpg"/>
+		    		         					<div class="warp-info">
+		    		         					  <span class="destination">斐济</span>
+		    		         				    </div>
+		    		         				</div>
+		    		         				<div class="item-info">
+		    		         					<div class="item-title">斐济包机主岛外岛7-8天自由行</div>
+		    		         					<div class="item-tag"></div>
+		    		         					<div class="item-price">
+		    		         						<div class="pi-price">
+		    		         							<em>¥</em>
+		    		         							6999
+		    		         							<span id="qi">起</span>
+		    		         						</div>	
+		    		         						<div class="item-sales">
+		    		         							&nbsp;
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+		    		         			</li>
+		    		         			<li>
+		    		         				<div class="warp-img">
+		    		         					<img src="img/TB1kwT8a1uSBuNjSsplSuve8pXa.jpg_230x230.jpg"/>
+		    		         					<div class="warp-info">
+		    		         					  <span class="destination">长滩岛</span>
+		    		         				    </div>
+		    		         				</div>
+		    		         				<div class="item-info">
+		    		         					<div class="item-title">全国直飞菲律宾长滩岛旅游5天4晚自由行机票酒店接送机一价全</div>
+		    		         					<div class="item-tag"></div>
+		    		         					<div class="item-price">
+		    		         						<div class="pi-price">
+		    		         							<em>¥</em>
+		    		         							2799
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出32件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+		    		         			</li>
+		    		         			<li>
+		    		         				<div class="warp-img">
+		    		         					<img src="img/TB171SKw4TpK1RjSZFGSuwHqFXa.jpg_230x230.jpg"/>
+		    		         					<div class="warp-info">
+		    		         					  <span class="destination">东京</span>
+		    		         				    </div>
+		    		         				</div>
+		    		         				<div class="item-info">
+		    		         					<div class="item-title">日本6天5晚半自助东京大阪两天自由活动温泉美食跟团游</div>
+		    		         					<div class="item-tag"></div>
+		    		         					<div class="item-price">
+		    		         						<div class="pi-price">
+		    		         							<em>¥</em>
+		    		         							6499
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出13件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+		    		         			</li>
+		    		         			<li>
+		    		         				<div class="warp-img">
+		    		         					<img src="img/TB1uLv6gmzqK1RjSZFpSuukSXXa.jpg_230x230.jpg"/>
+		    		         					<div class="warp-info">
+		    		         					  <span class="destination">伊尔库茨克</span>
+		    		         				    </div>
+		    		         				</div>
+		    		         				<div class="item-info">
+		    		         					<div class="item-title">【尾单】全国-俄罗斯8-9天跟团游</div>
+		    		         					<div class="item-tag"></div>
+		    		         					<div class="item-price">
+		    		         						<div class="pi-price">
+		    		         							<em>¥</em>
+		    		         							5999
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							&nbsp;
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+		    		         			</li>		    		         				    		   			
+		    		         		</ul>
+		    		         	</div>
+		    		           <!--右侧单图片-->
+		    		           <div class="banner">
+		    		           	  <img src="img/TB1YRkxowHqK1RjSZJnXXbNLpXa-228-525.jpg"/>		    		          
+		    		           </div>
+		    		         </div>	    		           
+		    			</div>
+		    		</div>
+		    		     
+		    	</div>
+		    </div>
+		    <p style="clear: both;"></p>
+		<!--2.3出境游-->
+		    <div class="trippig-go">
+		    	<div class="go-mod">
+		    		<!--上 出境游-->
+		    		<div class="trip-plant">
+		    			<!--1出境游+出境线路-->
+		    			<div class="pig-sell">
+		    				<img src="img/QQ图片20190619170410.jpg"/>
+		    			    <h2>出境游</h2>
+		    			</div>
+		    			<!--2出境线路-->
+		    			<div class="pig-bill">
+		    				<ul id="pig-bill-li">
+		    					<li id="bill-tab">出境线路</li>		    					
+		    				</ul>
+		    			</div>
+		    			<!--3更多特价-->
+		    			<div class="pig-more">
+		    				<p id="more-pi">更多出境游</p>
+		    				<img src="img/QQ图片20190618091031.png"/>
+		    			</div>
+		    		</div>
+		    		<!--下 目的地+图片-->
+		    		<div class="trip-city">
+		    			<div class="city-sub">
+		    				<!--1.目的地-->
+		    				<div class="sub-text">
+		    					<!--目的地:东南亚-->
+		    					<div class="sub-southeast">
+		    						<div class="sub-east">
+		    							目的地区域：
+		    						</div>
+		    						<div id="sub-south">
+		    							东南亚
+		    						</div>
+		    						<p id="sub-pi">ˇ</p>
+		    					</div>
+		    					<!--五个ul列表-->
+		    					<div class="mod-list">
+		    						<div class="list-text">
+		    							热门目的地:
+		    						</div>
+		    						<ul class="list-ul">
+		    							<li>泰国</li>
+		    							<li>新加坡</li>
+		    							<li>越南</li>
+		    							<li>柬埔寨</li>
+		    							<li>马来西亚</li>
+		    						</ul>
+		    					</div>
+		    				</div>
+		    		         <!--2.图片-->
+		    		         <div class="trip-warp">		    		     
+		    		         	<!--左侧八个图片-->
+		    		         	<div class="warp-con">
+		    		         		<ul class="warp-all">
+		    		         			<li>
+		    		         				<div class="warp-img">
+		    		         					<img src="img/TB2qqi7oVooBKNjSZFPXXXa2XXa_!!3913689703.jpg_230x230.jpg"/>
+		    		         					<div class="warp-info">
+		    		         					  <span class="destination">芽庄</span>
+		    		         				    </div>
+		    		         				</div>
+		    		         				<div class="item-info">
+		    		         					<div class="item-title">暑假直飞 越南芽庄旅游自由行 可升级酒店+赠专车接送机 甩尾</div>
+		    		         					<div class="item-tag"></div>
+		    		         					<div class="item-price">
+		    		         						<div class="pi-price">
+		    		         							<em>¥</em>
+		    		         							2099
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出330件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+		    		         			</li>
+		    		         			<li>
+		    		         				<div class="warp-img">
+		    		         					<img src="img/O1CN01dT6kXo1V0GKUjuWbM_!!1650382590.jpg_230x230.jpg"/>
+		    		         					<div class="warp-info">
+		    		         					  <span class="destination">新加坡市</span>
+		    		         				    </div>
+		    		         				</div>
+		    		         				<div class="item-info">
+		    		         					<div class="item-title">【环球影城+团签】全国直飞新加坡6天5晚自由行旅游机票酒店</div>
+		    		         					<div class="item-tag"></div>
+		    		         					<div class="item-price">
+		    		         						<div class="pi-price">
+		    		         							<em>¥</em>
+		    		         							3999
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出153件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+		    		         			</li>
+		    		         			<li>
+		    		         				<div class="warp-img">
+		    		         					<img src="img/O1CN01vbPod82KmqjPiqF4L_!!3025349600.jpg_230x230.jpg"/>
+		    		         					<div class="warp-info">
+		    		         					  <span class="destination">普吉</span>
+		    		         				    </div>
+		    		         				</div>
+		    		         				<div class="item-info">
+		    		         					<div class="item-title">泰国深度旅游 全国直飞普吉岛自由行 6天4晚 机票+酒店自由</div>
+		    		         					<div class="item-tag"></div>
+		    		         					<div class="item-price">
+		    		         						<div class="pi-price">
+		    		         							<em>¥</em>
+		    		         							1999
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出45件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+		    		         			</li>
+		    		         			<li>
+		    		         				<div class="warp-img">
+		    		         					<img src="img/O1CN01oE58hp2Bfg0NzP3HV_!!4227758366.jpg_230x230.jpg"/>
+		    		         					<div class="warp-info">
+		    		         					  <span class="destination">曼谷</span>
+		    		         				    </div>
+		    		         				</div>
+		    		         				<div class="item-info">
+		    		         					<div class="item-title">泰国旅游 曼谷芭提雅梦幻岛6天5晚跟团游 网红美食五钻酒店含</div>
+		    		         					<div class="item-tag"></div>
+		    		         					<div class="item-price">
+		    		         						<div class="pi-price">
+		    		         							<em>¥</em>
+		    		         							1780
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出12件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+		    		         			</li>
+		    		         			<li>
+		    		         				<div class="warp-img">
+		    		         					<img src="img/O1CN01rp0rs01iwVgv55LHT_!!2939694477.jpg_230x230.jpg"/>
+		    		         					<div class="warp-info">
+		    		         					  <span class="destination">沙美岛</span>
+		    		         				    </div>
+		    		         				</div>
+		    		         				<div class="item-info">
+		    		         					<div class="item-title">全国直飞泰国旅游曼谷芭提雅6天5晚纯玩半自由行跟团含机票0</div>
+		    		         					<div class="item-tag"></div>
+		    		         					<div class="item-price">
+		    		         						<div class="pi-price">
+		    		         							<em>¥</em>
+		    		         							2850
+		    		         							<span id="qi">起</span>
+		    		         						</div>	
+		    		         						<div class="item-sales">
+		    		         							30天售出80件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+		    		         			</li>
+		    		         			<li>
+		    		         				<div class="warp-img">
+		    		         					<img src="img/O1CN01tInl6T1aDbvxUkUgt_!!2437173296.jpg_230x230.jpg"/>
+		    		         					<div class="warp-info">
+		    		         					  <span class="destination">曼谷</span>
+		    		         				    </div>
+		    		         				</div>
+		    		         				<div class="item-info">
+		    		         					<div class="item-title">纯玩 飞猪旅行 暑假旅游曼谷芭提雅6日跟团游 泰国旅游半自由</div>
+		    		         					<div class="item-tag"></div>
+		    		         					<div class="item-price">
+		    		         						<div class="pi-price">
+		    		         							<em>¥</em>
+		    		         							3099
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出247件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+		    		         			</li>
+		    		         			<li>
+		    		         				<div class="warp-img">
+		    		         					<img src="img/O1CN017YHEWx2DDrAsZqAqO_!!488718576.jpg_230x230.jpg"/>
+		    		         					<div class="warp-info">
+		    		         					  <span class="destination">曼谷</span>
+		    		         				    </div>
+		    		         				</div>
+		    		         				<div class="item-info">
+		    		         					<div class="item-title">网红新选 泰国旅游曼谷芭提雅6天5晚跟团游纯玩旅行全程五星</div>
+		    		         					<div class="item-tag"></div>
+		    		         					<div class="item-price">
+		    		         						<div class="pi-price">
+		    		         							<em>¥</em>
+		    		         							2499
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出416件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+		    		         			</li>
+		    		         			<li>
+		    		         				<div class="warp-img">
+		    		         					<img src="img/TB2AypIytFopuFjSZFHXXbSlXXa_!!1816363388.jpg_230x230.jpg"/>
+		    		         					<div class="warp-info">
+		    		         					  <span class="destination">清迈</span>
+		    		         				    </div>
+		    		         				</div>
+		    		         				<div class="item-info">
+		    		         					<div class="item-title">飞猪专线 错峰特惠全国直飞泰国清迈自由行往返机票含税5-6</div>
+		    		         					<div class="item-tag"></div>
+		    		         					<div class="item-price">
+		    		         						<div class="pi-price">
+		    		         							<em>¥</em>
+		    		         							1150
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出59件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+		    		         			</li>		    		         				    		   			
+		    		         		</ul>
+		    		         	</div>
+		    		           <!--右侧单图片-->
+		    		           <div class="banner">
+		    		           	  <img src="img/TB1.48Ao6TpK1RjSZKPXXa3UpXa-228-525.jpg"/>		    		          
+		    		           </div>
+		    		         </div>	    		           
+		    			</div>
+		    		</div>
+		    		     
+		    	</div>
+		    </div>
+		<!--2.4境内游-->
+		<div class="trippig-go">
+		    	<div class="go-mod">
+		    		<!--上 境内游-->
+		    		<div class="trip-plant">
+		    			<!--1境内游+自由行-->
+		    			<div class="pig-bell">
+		    				<img src="img/QQ图片20190619211039.jpg"/>
+		    			    <h2>境内游</h2>
+		    			</div>
+		    			<!--2自由行+跟团游-->
+		    			<div class="pig-bill">
+		    				<ul id="pig-bill-li">
+		    					<li id="bill-tab">自由行</li>
+		    					<li>跟团游</li>
+		    				</ul>
+		    			</div>
+		    			<!--3更多特价-->
+		    			<div class="pig-more">
+		    				<p id="more-pi">更多境内游</p>
+		    				<img src="img/QQ图片20190618091031.png"/>
+		    			</div>
+		    		</div>
+		    		<!--下 目的地+图片-->
+		    		<div class="trip-city">
+		    			<div class="city-sub">
+		    				<!--1.目的地-->
+		    				<div class="sub-text">
+		    					<!--目的地:东南亚-->
+		    					<div class="sub-southeast">
+		    						<div class="sub-east">
+		    							目的地区域：
+		    						</div>
+		    						<div id="sub-south">
+		    							海南
+		    						</div>
+		    						<p id="fly-pi">ˇ</p>
+		    					</div>
+		    					<!--两个ul列表-->
+		    					<div class="mod-list">
+		    						<div class="list-text">
+		    							热门目的地:
+		    						</div>
+		    						<ul class="list-ul">
+		    							<li>三亚</li>
+		    							<li>亚龙湾</li>	    							
+		    						</ul>
+		    					</div>
+		    				</div>
+		    		         <!--2.图片-->
+		    		         <div class="trip-warp">		    		     
+		    		         	<!--左侧八个图片-->
+		    		         	<div class="warp-con">
+		    		         		<ul class="warp-all">
+		    		         			<li>
+		    		         				<div class="warp-img">
+		    		         					<img src="img/O1CN01DVFEfx1lO6lCmGixp_!!2157654808.jpg_230x230.jpg"/>
+		    		         					<div class="warp-info">
+		    		         					  <span class="destination">三亚</span>
+		    		         				    </div>
+		    		         				</div>
+		    		         				<div class="item-info">
+		    		         					<div class="item-title">【住蜈支洲岛珊瑚酒店】海南三亚旅游5天4晚自由行哈曼希尔顿</div>
+		    		         					<div class="item-tag"></div>
+		    		         					<div class="item-price">
+		    		         						<div class="pi-price">
+		    		         							<em>¥</em>
+		    		         							2680
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出6件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+		    		         			</li>
+		    		         			<li>
+		    		         				<div class="warp-img">
+		    		         					<img src="img/O1CN01A4oN8S1NeYFb27Iaz_!!3602861595.jpg_230x230.jpg"/>
+		    		         					<div class="warp-info">
+		    		         					  <span class="destination">三亚</span>
+		    		         				    </div>
+		    		         				</div>
+		    		         				<div class="item-info">
+		    		         					<div class="item-title">海南三亚旅游三亚自由行亲子游5天4晚哈曼康年亚特兰蒂斯酒店</div>
+		    		         					<div class="item-tag"></div>
+		    		         					<div class="item-price">
+		    		         						<div class="pi-price">
+		    		         							<em>¥</em>
+		    		         							3880
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出2件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+		    		         			</li>
+		    		         			<li>
+		    		         				<div class="warp-img">
+		    		         					<img src="img/O1CN01IoAkTP1zZTDlF8eq0_!!4162896728.jpg_230x230.jpg"/>
+		    		         					<div class="warp-info">
+		    		         					  <span class="destination">三亚</span>
+		    		         				    </div>
+		    		         				</div>
+		    		         				<div class="item-info">
+		    		         					<div class="item-title">海南三亚旅游5天4晚自由行亲子游 亚特兰蒂斯酒店含机票酒店</div>
+		    		         					<div class="item-tag"></div>
+		    		         					<div class="item-price">
+		    		         						<div class="pi-price">
+		    		         							<em>¥</em>
+		    		         							2180
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出570件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+		    		         			</li>
+		    		         			<li>
+		    		         				<div class="warp-img">
+		    		         					<img src="img/TB2mhHSleGSBuNjSspbXXciipXa_!!2256687003.jpg_230x230.jpg"/>
+		    		         					<div class="warp-info">
+		    		         					  <span class="destination">三亚</span>
+		    		         				    </div>
+		    		         				</div>
+		    		         				<div class="item-info">
+		    		         					<div class="item-title">【希尔顿泳池房】海南三亚5天4晚旅游自由行蜈支洲岛酒店别墅</div>
+		    		         					<div class="item-tag"></div>
+		    		         					<div class="item-price">
+		    		         						<div class="pi-price">
+		    		         							<em>¥</em>
+		    		         							1862
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出186件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+		    		         			</li>
+		    		         			<li>
+		    		         				<div class="warp-img">
+		    		         					<img src="img/O1CN01hfp0aH1mSWEDkLdVU_!!1652724953.jpg_230x230.jpg"/>
+		    		         					<div class="warp-info">
+		    		         					  <span class="destination">三亚</span>
+		    		         				    </div>
+		    		         				</div>
+		    		         				<div class="item-info">
+		    		         					<div class="item-title">三亚5天4晚自由行含机票酒店套餐租车自驾接送机旅拍海南亲子</div>
+		    		         					<div class="item-tag"></div>
+		    		         					<div class="item-price">
+		    		         						<div class="pi-price">
+		    		         							<em>¥</em>
+		    		         							2290
+		    		         							<span id="qi">起</span>
+		    		         						</div>	
+		    		         						<div class="item-sales">
+		    		         							30天售出2件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+		    		         			</li>
+		    		         			<li>
+		    		         				<div class="warp-img">
+		    		         					<img src="img/TB1BmAbcMmH3KVjSZKzHnP2OXXa_093624.jpg_230x230.jpg"/>		   	         			
+		    		         					<div class="warp-info">
+		    		         					  <span class="destination">三亚</span>
+		    		         				    </div>
+		    		         				</div>
+		    		         				<div class="item-info">
+		    		         					<div class="item-title">暑期热卖 上海直飞海南三亚2-15天往返机票上海航空回程可选</div>
+		    		         					<div class="item-tag"></div>
+		    		         					<div class="item-price">
+		    		         						<div class="pi-price">
+		    		         							<em>¥</em>
+		    		         							1199
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出15件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+		    		         			</li>
+		    		         			<li>
+		    		         				<div class="warp-img">
+		    		         					<img src="img/O1CN01c09KQ91Edn2Ui3jXA_!!3934000375.jpg_230x230.jpg"/>
+		    		         					<div class="warp-info">
+		    		         					  <span class="destination">三亚</span>
+		    		         				    </div>
+		    		         				</div>
+		    		         				<div class="item-info">
+		    		         					<div class="item-title">三亚自由行三亚旅游5天4晚往返机票网红康年暑期亲子游亚龙湾</div>
+		    		         					<div class="item-tag"></div>
+		    		         					<div class="item-price">
+		    		         						<div class="pi-price">
+		    		         							<em>¥</em>
+		    		         							2248
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出92件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+		    		         			</li>
+		    		         			<li>
+		    		         				<div class="warp-img">
+		    		         					<img src="img/O1CN01SZ2Gq31bfNascYvhb_!!4033603492.jpg_230x230.jpg"/>
+		    		         					<div class="warp-info">
+		    		         					  <span class="destination">三亚</span>
+		    		         				    </div>
+		    		         				</div>
+		    		         				<div class="item-info">
+		    		         					<div class="item-title">全国出发含机票海南三亚旅游自由行5天4晚五星酒店潜水亲子自</div>
+		    		         					<div class="item-tag"></div>
+		    		         					<div class="item-price">
+		    		         						<div class="pi-price">
+		    		         							<em>¥</em>
+		    		         							2410
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出531件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+		    		         			</li>		    		         				    		   			
+		    		         		</ul>
+		    		         	</div>
+		    		           <!--右侧单图片-->
+		    		           <div class="banner">
+		    		           	  <img src="img/TB1tH5hO4YaK1RjSZFnXXa80pXa-228-525.jpg"/>		    		          
+		    		           </div>
+		    		         </div>	    		           
+		    			</div>
+		    		</div>
+		    		     
+		    	</div>
+		    </div>
+		<!--2.5周边游/门票-->
+		<div class="trippig-around">
+			<div class="around-side">
+				<!--1周边游+门票-->
+				<div class="trip-plant">
+		    			<!--1周边游+门票-->
+		    			<div class="pig-bell">
+		    				<img src="img/QQ图片20190621105721.jpg"/>
+		    			    <h2>周边游</h2>
+		    			    <h2 id="bell-h">|</h2>
+		    			    <h2 id="bell-b">门票</h2>
+		    			</div>		    			
+		    			<!--3更多特价-->
+		    			<div class="pig-more">
+		    				<p id="more-pr">更多特价门票</p>
+		    				<img src="img/QQ图片20190618091031.png"/>
+		    			</div>
+		    		</div>
+				<!--2门票+八个图片+右边 周边游+5个图片-->
+			        <div class="pig-all">
+			         	<!--上 门票+8图片+右-->
+			         	<div class="pig-piao">
+			         		<!--左 门票 图片-->
+			         		<div class="piao-left">
+			         			<!--上门票-->
+			         			  <div class="left-bl">
+			         			  	<div class="bl-bank">
+			         			  		门票:
+			         			  	</div>
+			         			  	<ul class="left-ul">
+			         			  		<li id="left-li">上海</li>
+			         			  		<li>广州</li>
+			         			  		<li>珠海</li>
+			         			  		<li>杭州</li>
+			         			  		<li>北京</li>
+			         			  		<li>三亚</li>
+			         			  		<li>深圳</li>
+			         			  		<li>西安</li>
+			         			  		<li>常州</li>
+			         			  		<li>武汉</li>
+			         			  		<li>宁波</li>
+			         			  		<li>桂林</li>
+			         			  		<li>成都</li>
+			         			  		<li>金华</li>
+			         			  		<li>张家界</li>
+			         			  	</ul>
+			         			  </div>
+			         			<!--下图片-->
+			         			<div class="home-item">
+			         				<ul class="item-ul">
+			         					<li>
+			         						<div class="left-img">
+			         							<img src="img/O1CN01B3ubmM28CPq1S9I0L_!!0-travel.jpg_360x360.jpg"/>
+			         						</div>
+			         						<div class="left-info">
+			         							<div class="left-title">
+			         								上海迪士尼度假区
+			         							</div>
+			         							<div class="left-price">
+			         								<div class="bi-price">
+			         									<em>¥</em>
+			         									544
+			         									<span class="left-qi">起</span>
+			         								</div>
+			         							</div>
+			         						</div>
+			         					</li>
+			         					<li>
+			         						<div class="left-img">
+			         							<img src="img/TB1r.4eXSCWBuNjy0FhSuv6EVXa_360x360.jpg"/>
+			         						</div>
+			         						<div class="left-info">
+			         							<div class="left-title">
+			         								东方明珠广播电视塔
+			         							</div>
+			         							<div class="left-price">
+			         								<div class="bi-price">
+			         									<em>¥</em>
+			         									146
+			         									<span class="left-qi">起</span>
+			         								</div>
+			         							</div>
+			         						</div>
+			         					</li>
+			         					<li>
+			         						<div class="left-img">
+			         							<img src="img/TB1COVbCkvoK1RjSZPf.GBPKFXa_020240.jpg_360x360.jpg"/>
+			         						</div>
+			         						<div class="left-info">
+			         							<div class="left-title">
+			         								上海野生动物园
+			         							</div>
+			         							<div class="left-price">
+			         								<div class="bi-price">
+			         									<em>¥</em>
+			         									99
+			         									<span class="left-qi">起</span>
+			         								</div>
+			         							</div>
+			         						</div>
+			         					</li>
+			         					<li>
+			         						<div class="left-img">
+			         							<img src="img/TB1hV1QiwHqK1RjSZFEX5IGMXXa_100015.jpg_360x360.jpg"/>
+			         						</div>
+			         						<div class="left-info">
+			         							<div class="left-title">
+			         								上海海昌海洋公园
+			         							</div>
+			         							<div class="left-price">
+			         								<div class="bi-price">
+			         									<em>¥</em>
+			         									323
+			         									<span class="left-qi">起</span>
+			         								</div>
+			         							</div>
+			         						</div>
+			         					</li>
+			         					<li>
+			         						<div class="left-img">
+			         							<img src="img/TB1ckNjXMaTBuNjSszfSutgfpXa_360x360.jpg"/>
+			         						</div>
+			         						<div class="left-info">
+			         							<div class="left-title">
+			         								上海欢乐谷
+			         							</div>
+			         							<div class="left-price">
+			         								<div class="bi-price">
+			         									<em>¥</em>
+			         									205
+			         									<span class="left-qi">起</span>
+			         								</div>
+			         							</div>
+			         						</div>
+			         					</li>
+			         					<li>
+			         						<div class="left-img">
+			         							<img src="img/TB1qsphXQyWBuNjy0FpSuussXXa_360x360.jpg"/>
+			         						</div>
+			         						<div class="left-info">
+			         							<div class="left-title">
+			         								黄浦江游览
+			         							</div>
+			         							<div class="left-price">
+			         								<div class="bi-price">
+			         									<em>¥</em>
+			         									61
+			         									<span class="left-qi">起</span>
+			         								</div>
+			         							</div>
+			         						</div>
+			         					</li>
+			         					<li>
+			         						<div class="left-img">
+			         							<img src="img/TB24u.YtVXXXXXmXpXXXXXXXXXX_!!0-travel.jpg_360x360.jpg"/>
+			         						</div>
+			         						<div class="left-info">
+			         							<div class="left-title">
+			         								上海科技馆
+			         							</div>
+			         							<div class="left-price">
+			         								<div class="bi-price">
+			         									<em>¥</em>
+			         									44
+			         									<span class="left-qi">起</span>
+			         								</div>
+			         							</div>
+			         						</div>
+			         					</li>
+			         					<li>
+			         						<div class="left-img">
+			         							<img src="img/TB1hqtoXKuSBuNjSsziSuvq8pXa_360x360.jpg"/>
+			         						</div>
+			         						<div class="left-info">
+			         							<div class="left-title">
+			         								上海海洋水族馆
+			         							</div>
+			         							<div class="left-price">
+			         								<div class="bi-price">
+			         									<em>¥</em>
+			         									153
+			         									<span class="left-qi">起</span>
+			         								</div>
+			         							</div>
+			         						</div>
+			         					</li>
+			         				</ul>
+			         			</div>
+			         		</div>
+			         		<!--右 门票榜单-->
+			         		<div class="piao-right">
+			         			<!--上门票榜单-->
+			         			<div class="right-door">
+			         				门票榜单
+			         				<div class="right-sub">
+			         					<ul>
+			         						<li class="right-li">国际门票</li>
+			         						<li>国内门票</li>
+			         					</ul>
+			         				</div>
+			         			</div>
+			         			<!--下列表-->
+			         			<ul class="right-list">
+			         				<li>
+			         					<div class="right-img">
+			         						<img src="img/QQ图片20190622184213.jpg"/>
+			         					</div>
+			         					<div class="right-info">
+			         						<div class="name">
+			         							日本环球影城
+			         						</div>
+			         						<div class="di-price">
+			         							<em>¥</em>
+			         							450
+			         						</div>
+			         					</div>
+			         					<div class="top-top1">
+			         						Top1			         				
+			         					</div>
+			         				</li>
+			         				<li>
+			         					<div class="right-img">
+			         						<img src="img/QQ图片20190622184220.jpg"/>
+			         					</div>
+			         					<div class="right-info">
+			         						<div class="name">
+			         							新加坡环球影城
+			         						</div>
+			         						<div class="di-price">
+			         							<em>¥</em>
+			         							313
+			         						</div>
+			         					</div>
+			         					<div class="top-top1">
+			         						Top2			         				
+			         					</div>
+			         				</li>
+			         				<li>
+			         					<div class="right-img">
+			         						<img src="img/QQ图片20190622184226.jpg"/>
+			         					</div>
+			         					<div class="right-info">
+			         						<div class="name">
+			         							东京迪士尼乐园
+			         						</div>
+			         						<div class="di-price">
+			         							<em>¥</em>
+			         							409
+			         						</div>
+			         					</div>
+			         					<div class="top-top1">
+			         						Top3			         				
+			         					</div>
+			         				</li>
+			         				<li>
+			         					<div class="right-img">
+			         						<img src="img/QQ图片20190622184233.jpg"/>
+			         					</div>
+			         					<div class="right-info">
+			         						<div class="name">
+			         							西蒙人妖秀
+			         						</div>
+			         						<div class="di-price">
+			         							<em>¥</em>
+			         							100
+			         						</div>
+			         					</div>			         				
+			         				</li>
+			         				<li>
+			         					<div class="right-img">
+			         						<img src="img/QQ图片20190622184253.jpg"/>
+			         					</div>
+			         					<div class="right-info">
+			         						<div class="name">
+			         							S.E.A.海洋馆
+			         						</div>
+			         						<div class="di-price">
+			         							<em>¥</em>
+			         							106
+			         						</div>
+			         					</div>			         					
+			         				</li>
+			         			</ul>
+			         		</div>
+			         	</div>
+			         	<!--下 周边游+5图片-->
+			         	<div class="near-by">
+			         		<!--上周边游-->	
+			         		<div class="near-sub">			         					     
+			         			  	<div class="near-hot">
+			         			  		周边游:
+			         			  	</div>
+			         			  	<ul class="hot-ul">
+			         			  		<li id="hot-li">珠海</li>
+			         			  		<li>广州</li>
+			         			  		<li>上海</li>
+			         			  		<li>杭州</li>
+			         			  		<li>金华</li>
+			         			  		<li>佛山</li>
+			         			  		<li>三亚</li>
+			         			  		<li>常州</li>
+			         			  		<li>桂林</li>
+			         			  		<li>惠州</li>
+			         			  		<li>吉林</li>
+			         			  		<li>白山</li>
+			         			  		<li>黄山</li>
+			         			  		<li>深圳</li>
+			         			  		<li>嘉兴</li>
+			         			  	</ul>	
+			         		</div>
+			         			<!--下五个图片-->
+			         		<div class="near-sup">
+			         			<ul>
+			         				<li>
+			         					<div class="warp-img">
+		    		         					<img src="img/O1CN0179D2FI1GB3Q8lbuDl_!!2236060583.jpg_230x230.jpg"/>
+		    		         					<div class="warp-info">
+		    		         					  <span class="destination">广州</span>
+		    		         				    </div>
+		    		         				</div>
+		    		         				<div class="item-info">
+		    		         					<div class="item-title">珠海港珠澳大桥一日游 船票 穿梭巴士车票广州珠海出发纯玩一日游</div>
+		    		         					<div class="item-tag"></div>
+		    		         					<div class="item-price">
+		    		         						<div class="pi-price">
+		    		         							<em>¥</em>
+		    		         							198
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出310件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+			         				</li>
+			         				<li>
+			         					<div class="warp-img">
+		    		         					<img src="img/O1CN013rEnYA1DNvjGJnYwA_!!2200575680205.jpg_230x230.jpg"/>
+		    		         					<div class="warp-info">
+		    		         					  <span class="destination">广州</span>
+		    		         				    </div>
+		    		         				</div>
+		    		         				<div class="item-info">
+		    		         					<div class="item-title">珠海市区免费接送 珠海一日游纯玩打卡港珠澳大桥+澳门多网红景点</div>
+		    		         					<div class="item-tag"></div>
+		    		         					<div class="item-price">
+		    		         						<div class="pi-price">
+		    		         							<em>¥</em>
+		    		         							45
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出257件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+			         				</li>
+			         				<li>
+			         					<div class="warp-img">
+		    		         					<img src="img/TB21FCbAH1YBuNjSszhXXcUsFXa_!!3325553380.jpg_230x230.jpg"/>
+		    		         					<div class="warp-info">
+		    		         					  <span class="destination">清远</span>
+		    		         				    </div>
+		    		         				</div>
+		    		         				<div class="item-info">
+		    		         					<div class="item-title">清远古龙峡漂流两日游含漂流门票 清远旅游跟团游 云天玻霸玻璃桥</div>
+		    		         					<div class="item-tag"></div>
+		    		         					<div class="item-price">
+		    		         						<div class="pi-price">
+		    		         							<em>¥</em>
+		    		         							388
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出125件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+			         				</li>
+			         				<li>
+			         					<div class="warp-img">
+		    		         					<img src="img/O1CN01kTWhZH1Dfn8Pv4MAG_!!3123610244.jpg_230x230.jpg"/>
+		    		         					<div class="warp-info">
+		    		         					  <span class="destination">东莞</span>
+		    		         				    </div>
+		    		         				</div>
+		    		         				<div class="item-info">
+		    		         					<div class="item-title">香港纯玩一日游深圳广州珠海出发跟团蜡像馆海洋馆1天港珠澳大桥</div>
+		    		         					<div class="item-tag"></div>
+		    		         					<div class="item-price">
+		    		         						<div class="pi-price">
+		    		         							<em>¥</em>
+		    		         							225
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出13件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+			         				</li>
+			         				<li>
+			         					<div class="warp-img">
+		    		         					<img src="img/O1CN016HOdES2GINutBKhTT_!!3058498992.jpg_230x230.jpg"/>
+		    		         					<div class="warp-info">
+		    		         					  <span class="destination">珠海</span>
+		    		         				    </div>
+		    		         				</div>
+		    		         				<div class="item-info">
+		    		         					<div class="item-title">【含双人早餐】珠海东澳岛 格力东澳大酒店住宿东奥岛套票船票</div>
+		    		         					<div class="item-tag"></div>
+		    		         					<div class="item-price">
+		    		         						<div class="pi-price">
+		    		         							<em>¥</em>
+		    		         							140
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出82件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+			         				</li>
+			         			</ul>
+			         		</div>
+			         	</div>
+			        </div>
+			</div>
+		</div>
+		<!--2.6酒店-->
+		<div class="trippig-go">
+		    	<div class="go-mod">
+		    		<!--上 酒店-->
+		    		<div class="trip-plant">
+		    			<!--1 酒店 国内+国际-->
+		    			<div class="pig-bell">
+		    				<img src="img/QQ图片20190622213202.png"/>
+		    			    <h2>酒店</h2>
+		    			</div>
+		    			<!--2国内+国际-->
+		    			<div class="pig-bill">
+		    				<ul id="pig-bill-li">
+		    					<li id="bill-tab">国内酒店</li>
+		    					<li>国际酒店</li>
+		    					<li>客栈公寓</li>
+		    				</ul>
+		    			</div>
+		    			<!--3更多超值酒店-->
+		    			<div class="pig-more">
+		    				<p id="more-pr">更多超值酒店</p>
+		    				<img src="img/QQ图片20190618091031.png"/>
+		    			</div>
+		    		</div>
+		    		<!--下 入住城市+图片-->
+		    		<div class="trip-city">
+		    			<div class="city-sub">
+		    				<!--1.入住城市-->
+		    				<div class="sub-text">
+		    					<!--入住城市:上海-->
+		    					<div class="sub-southeast">
+		    						<div class="sub-east">
+		    							入住城市：
+		    						</div>
+		    						<ul class="list-bt">
+		    							<li id="list-li">上海</li>
+		    							<li>北京</li>
+		    							<li>广州</li>
+		    							<li>深圳</li>
+		    							<li>厦门</li>
+		    							<li>杭州</li>
+		    							<li>成都</li>
+		    							<li>南京</li>
+		    							<li>苏州</li>
+		    						</ul>
+		    					</div>
+		    				</div>
+		    		         <!--2.图片-->
+		    		         <div class="trip-warp">		    		     
+		    		         	<!--左侧八个图片-->
+		    		         	<div class="warp-con">
+		    		         		<ul class="warp-all">
+		    		         			<li>
+		    		         				<div class="li-img">
+		    		         					<img src="img/TB1jSzdbBSD3KVjSZFqAJM4bpXa_035750.jpg_230x230.jpg"/>		    		     
+		    		         				</div>
+		    		         				<div class="item-info">
+		    		         					<div class="item-tit">上海中建万怡酒店</div>
+		    		         					<div class="item-level">酒店类型:高档型</div>
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							548
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+		    		         			</li>
+		    		         			<li>
+		    		         				<div class="li-img">
+		    		         					<img src="img/TB1WkybDXzqK1RjSZFvpbgB7VXa_021030.jpg_230x230.jpg"/>
+		    		         				</div>
+		    		         				<div class="item-info">
+		    		         					<div class="item-tit">上海迪士尼度假区玩具总动员酒店</div>
+		    		         					<div class="item-level">酒店类型:高档型</div>
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							1884
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+		    		         			</li>
+		    		         			<li>
+		    		         				<div class="li-img">
+		    		         					<img src="img/TB1Jv_OX8OD3KVjSZFFh1Mn9pXa_095230.jpg_230x230.jpg"/>
+		    		         				</div>
+		    		         				<div class="item-info">
+		    		         					<div class="item-tit">上海万信慧选酒店国际旅游度假区店</div>
+		    		         					<div class="item-level">酒店类型:舒适型</div>
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							230
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+		    		         			</li>
+		    		         			<li>
+		    		         				<div class="li-img">
+		    		         					<img src="img/TB1pqm2bvWG3KVjSZFgYI6TspXa_023412.jpg_230x230.jpg"/>
+		    		         				</div>
+		    		         				<div class="item-info">
+		    		         					<div class="item-tit">上海国际旅游度假区万怡酒店</div>
+		    		         					<div class="item-level">酒店类型:豪华型</div>
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							598
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+		    		         			</li>
+		    		         			<li>
+		    		         				<div class="li-img">
+		    		         					<img src="img/TB1FEecMHrpK1RjSZTEpHwWAVXa_030108.jpg_230x230.jpg"/>
+		    		         				</div>
+		    		         				<div class="item-info">
+		    		         					<div class="item-tit">上海威斯汀大饭店</div>
+		    		         					<div class="item-level">酒店类型:豪华型</div>
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							1245
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+		    		         			</li>
+		    		         			<li>
+		    		         				<div class="li-img">
+		    		         					<img src="img/TB19XnYgXzqK1RjSZFvPFsB7VXa_031626.jpg_230x230.jpg"/>
+		    		         				<div class="item-info">
+		    		         					<div class="item-tit">上海乐家酒店式公寓东方明珠外滩店</div>
+		    		         					<div class="item-level">酒店类型:客栈公寓</div>
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							242
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+		    		         			</li>
+		    		         			<li>
+		    		         				<div class="li-img">
+		    		         					<img src="img/TB1kwM.RVXXXXcnXFXX.02G.XXX_071155.jpg_230x230.jpg"/>
+		    		         				</div>
+		    		         				<div class="item-info">
+		    		         					<div class="item-tit">上海大众空港宾馆（浦东机场店）</div>
+		    		         					<div class="item-level">酒店类型:舒适型</div>
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							879
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+		    		         			</li>
+		    		         			<li>
+		    		         				<div class="li-img">
+		    		         					<img src="img/TB1IBM4spYqK1RjSZLefnrXppXa_040024.jpg_230x230.jpg"/>
+		    		         				</div>
+		    		         				<div class="item-info">
+		    		         					<div class="item-tit">上海迪士尼乐园酒店</div>
+		    		         					<div class="item-level">酒店类型:高档型</div>
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							4081
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+		    		         			</li>		    		         				    		   			
+		    		         		</ul>
+		    		         	</div>
+		    		           <!--右侧列表-->
+		    		           <div class="hotel-filter">
+		    		           	    	<!--1价位-->	
+		    		           	    	<div class="mod">
+		    		           	    		<div class="title">
+		    		           	    			价位
+		    		           	    		</div>
+		    		           	    		<ul>
+		    		           	    			<li>不限</li>
+		    		           	    			<li>100元以下</li>
+		    		           	    			<li>100-300元</li>
+		    		           	    			<li>300-600元</li>
+		    		           	    			<li>600-1500元</li>
+		    		           	    			<li>1500元以上</li>
+		    		           	    		</ul>
+		    		           	    	</div>
+		    		           	    	<!--2商圈-->
+		    		           	    	<div class="mod">
+		    		           	    		<div class="title">
+		    		           	    			商圈
+		    		           	    		</div>
+		    		           	    		<ul>
+		    		           	    			<li>外滩</li>
+		    		           	    			<li>人民广场</li>
+		    		           	    			<li>迪士尼度假区</li>
+		    		           	    			<li>浦东机场区域</li>
+		    		           	    			<li>虹桥机场/国家...</li>
+		    		           	    			<li>豫园</li>
+		    		           	    		</ul>
+		    		           	    	</div>
+		    		           	    	<!--3品牌-->
+		    		           	    	<div class="mod">
+		    		           	    		<div class="title">
+		    		           	    			品牌
+		    		           	    		</div>
+		    		           	    		<ul>
+		    		           	    			<li>汉庭</li>
+		    		           	    			<li>如家</li>
+		    		           	    			<li>海友</li>
+		    		           	    			<li>易佰</li>
+		    		           	    			<li>锦江之星</li>
+		    		           	    			<li>格林豪泰</li>
+		    		           	    		</ul>
+		    		           	    	</div>
+		    		           </div>
+		    		         </div>	    		           
+		    			</div>
+		    		</div>
+		    		     
+		    	</div>
+		    </div>
+		<!--2.7机票-->
+		<!--2.8猜你喜欢-->
+		<div class="recommend-mod">
+			<div class="home-mod">
+				<!--猜你喜欢-->
+				<div class="hd">
+					<img src="img/QQ图片20190623005047.jpg"/>
+					<h2>
+						<span>猜你喜欢</span>
+					</h2>
+				</div>
+				<!--图片-->
+				<div class="bd">
+					<div class="home-it">
+						<ul class="clearfix">
+							<li>
+								<div class="item-img">
+									<img src="img/TB2AEDTbuKAUKJjSZFzXXXdQFXa_!!1621612072.jpg_230x230.png"/>
+									<div class="extra-info">
+									    <span class="destination">马尔代夫</span>
+									    <span class="type">自由行</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">九州风行 马尔代夫旅游悦椿庄薇拉瓦鲁岛/AV岛蜜月旅行亲子</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							14899
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出1件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2lev1c8smBKNjSZFsXXaXSVXa_!!2075542807.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">酒泉</span>
+									    <span class="type">跟团游</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">房车 青海湖旅游敦煌9天8晚跟团游茶卡盐湖西北大环线西宁甘</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							3999
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出200件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2z7YZlf5TBuNjSspcXXbnGFXa_!!2075542807.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">阿勒泰</span>
+									    <span class="type">跟团游</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">飞猪专线 新疆旅游乌鲁木齐南北疆11天10晚跟团游喀纳斯独库</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							4899
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出145件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2a1..fL6H8KJjy0FjXXaXepXa_!!2935198750.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">迪庆</span>
+									    <span class="type">跟团游</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">飞猪昆明大理丽江泸沽湖香格里拉云南旅游6天5晚洱海温泉纯玩</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							1499
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出1件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2HDOOakfb_uJkSmRyXXbWxVXa_!!2431080933.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">西双版纳</span>
+									    <span class="type">跟团游</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">云南旅游昆明大理丽江西双版纳8天7晚跟团游含环飞机票云南全</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							2680
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出1件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<!--2排-->
+							<li>
+								<div class="item-img">
+									<img src="img/TB2L5OqdrsTMeJjSsziXXcdwXXa_!!1621612072.jpg_230x230.png"/>
+									<div class="extra-info">
+									    <span class="destination">马尔代夫</span>
+									    <span class="type">自由行</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">飞猪专线 暑期马尔代夫旅游萨芙莉岛一价全包蜜月亲子旅行自</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							10699
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出1件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2VbqkaFuWBuNjSspnXXX1NVXa-2935198750.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">黔南</span>
+									    <span class="type">跟团游</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">贵州旅游黄果树瀑布西江苗寨荔波大小七孔轻奢纯玩5天4晚跟团</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							1488
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出1件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2Pqq6XPnyQeBjSspnXXbZipXa_!!224591973.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">美国</span>
+									    <span class="type">自由行</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">飞猪专线【中青旅】全国直飞美国塞班岛旅游7天自由行含环岛</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							4580
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出1件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB26uMzbrsTMeJjSsziXXcdwXXa_!!1911915421.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">海口</span>
+									    <span class="type">跟团游</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">三亚旅游 海南三亚6天5晚跟团游 豪华海景房含机票纯玩团飞</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							2400
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出143件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2z0TdqFXXXXaBXpXXXXXXXXXX_!!1137856455.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">桂林</span>
+									    <span class="type">跟团游</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">全程独立包车 桂林旅游纯玩团龙脊漓江阳朔5天4晚五日游</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							1799
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出5件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<!--3排-->
+							<li>
+								<div class="item-img">
+									<img src="img/TB2Yt31kWmWBuNjy1XaXXXCbXXa_!!3025349600.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">美国</span>
+									    <span class="type">自由行</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">多地出发美国塞班岛+蜜月亲子自由行+赠接送机+环岛6天5晚游</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							2580
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出6件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2ivzFoVuWBuNjSszbXXcS7FXa_!!2935198750.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">呼伦贝尔</span>
+									    <span class="type">跟团游</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">呼伦贝尔旅游海拉尔6天5晚跟团游内蒙古大草原满洲里纯玩亲子</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							2680
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出58件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2mC6Pj4hmpuFjSZFyXXcLdFXa_!!2935198750.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">迪庆</span>
+									    <span class="type">跟团游</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">飞猪旅游纯玩云南旅游丽江旅游5天4晚大理泸沽湖香格里拉雪山</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							999
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出1件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2P8i_FCtYBeNjSspkXXbU8VXa_!!1621612072.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">俄罗斯</span>
+									    <span class="type">跟团游</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">九州风行 欧洲俄罗斯伊尔库茨克贝加尔湖旅游璀璨全景8-9日</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							6699
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出3件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB29e9tFmtYBeNjSspkXXbU8VXa_!!1753074435.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">海口</span>
+									    <span class="type">跟团游</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">三亚旅游纯玩蜜月跟团5天4晚双飞机票海南亲子游蜈支洲岛飞猪</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							1599
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出72件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<!--4排-->
+							<li>
+								<div class="item-img">
+									<img src="img/TB2Oxzjh2uSBuNkHFqDXXXfhVXa_!!3181133671.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">泰国</span>
+									    <span class="type">自由行</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">【无边泳池】飞猪暑假泰国普吉岛旅游悦榕庄酒店别墅7天5晚自</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							2850
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出59件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2uLQMwntYBeNjy1XdXXXXyVXa-2935198750.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">呼伦贝尔</span>
+									    <span class="type">跟团游</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">网红新选呼伦贝尔旅游海拉尔内蒙古草原6天5晚亲子跟团游满洲</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							2699
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出47件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2oTLgiwLD8KJjSszeXXaGRpXa_!!2935198750.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">厦门</span>
+									    <span class="type">跟团游</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">厦门旅游厦门4天3晚纯玩跟团游轻奢五星酒店含鼓浪屿一日游小</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							799
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出11件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2cQILdHArBKNjSZFLXXc_dVXa_!!2484405624.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">昆明</span>
+									    <span class="type">跟团游</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">爆款特卖 云南旅游 昆明大理丽江6天5晚跟团游旅拍飞猪旅行含</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							1980
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出1件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB1i4.hXUR1BeNjy0FmMAT0wVXa_050837.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">阿勒泰</span>
+									    <span class="type">跟团游</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">新疆旅游北疆环线伊犁喀纳斯赛里木湖那拉提草原火车11天10晚</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							3980
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出151件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<!--5排-->
+							<li>
+								<div class="item-img">
+									<img src="img/TB2F_2.eYRkpuFjSspmXXc.9XXa_!!2274309147.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">重庆</span>
+									    <span class="type">当地玩乐</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">23人总统舱纯玩重庆旅游武隆仙女山天生三桥天坑地缝一日游上</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							228
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出77件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2snWMxSBYBeNjy0FeXXbnmFXa_!!1129595674.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">昆明</span>
+									    <span class="type">跟团游</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">云南旅游昆明大理丽江玉龙雪山6天5晚跟团游石林洱海旅拍温泉</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							2060
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出4件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2XM1toFuWBuNjSspnXXX1NVXa_!!1775894962.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">长沙</span>
+									    <span class="type">跟团游</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">飞猪专线湖南张家界旅游6天5晚跟团游武陵源韶山玻璃桥天门山</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							1688
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出19件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2REA4d_dYBeNkSmLyXXXfnVXa_!!2074394234.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">香港</span>
+									    <span class="type">跟团游</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">港澳旅游港澳4天3晚跟团游香港澳门旅游海洋公园迪士尼乐园亲</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							1050
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出2件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2eJShot4opuFjSZFLXXX8mXXa_!!754920082.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">毛里求斯</span>
+									    <span class="type">自由行</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">全国出发毛里求斯One Only酒店套房度假7天5晚自由行旅游机票</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							21999
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出1件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<!--6排-->
+							<li>
+								<div class="item-img">
+									<img src="img/TB2W9.YcyC9MuFjSZFoXXbUzFXa_!!2697550341.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">西安</span>
+									    <span class="type">当地玩乐</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">飞猪专线西安旅游一日游秦始皇兵马俑华清池一日游纯玩长恨歌</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							144
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出726件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2PfhLrb8kpuFjy0FcXXaUhpXa_!!1775894962.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">崇左</span>
+									    <span class="type">当地玩乐</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">广西南宁旅游2天1晚跟团游德天瀑布二日游通灵大峡谷北海明仕</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							236
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出68件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2Zn7pdsuYBuNkSmRyXXcA3pXa_!!2399809621.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">北京</span>
+									    <span class="type">自由行</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">北京旅游5天4晚 自由行住宿五星酒店赠24h接机6选1北京自由</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							1699
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出15件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2AHLlerZnBKNjSZFhXXc.oXXa_!!2911713525.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">青海</span>
+									    <span class="type">自由行</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">飞猪专线青海旅游6天5晚自由行敦煌莫高窟青海湖茶卡盐湖西宁</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							1300
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出1026件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2nI5gkx9YBuNjy0FfXXXIsVXa_!!2770691147.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">那曲</span>
+									    <span class="type">跟团游</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">西藏旅游纯玩青海湖拉萨林芝纳木错珠峰双飞单卧13天12晚跟团</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							7980
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出1件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<!--7排-->
+							<li>
+								<div class="item-img">
+									<img src="img/TB2nGErgRcHL1JjSZFBXXaiGXXa_!!2995239652.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">丽江</span>
+									    <span class="type">当地玩乐</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">飞猪专线云南丽江泸沽湖两日游旅游门票旅拍泸沽湖跟团二日游</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							330
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出80件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB1bdxqaYuWBuNjSszg_Kv8jVXa_110947.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">龙岩</span>
+									    <span class="type">当地玩乐</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">厦门旅游龙岩永定土楼一日游高北土楼含门票往返接送午餐天天</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							118
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出1件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2E7u0zAyWBuNjy0FpXXassXXa_!!2611945493.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">阿坝</span>
+									    <span class="type">跟团游</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">2-12半自由纯玩团四川成都到稻城亚丁旅游色达7天甘孜州318川</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							1580
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出7件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2trbWdBbM8KJjSZFFXXaynpXa_!!3539423837.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">楚雄</span>
+									    <span class="type">跟团游</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">云南旅游 昆明大理丽江飞猪旅行 云南6天5晚云南跟团游云南</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							2270
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出1件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2Q8Vtlr5YBuNjSspoXXbeNFXa_!!2939694477.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">迪庆</span>
+									    <span class="type">自由行</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">直飞丽江大理5天4晚纯玩含机票包车自由行云南旅游亲子蜜月家</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							1599
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出46件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<!--8排-->
+							<li>
+								<div class="item-img">
+									<img src="img/TB2aqrHBH5YBuNjSspoXXbeNFXa_!!2431080933.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">湘西</span>
+									    <span class="type">跟团游</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">网红新选张家界旅游湖南6天5晚跟团游含机票天门山凤凰古城纯</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							2160
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出36件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB1NwDTnv2H8KJjy0FcnuiDlFXa_032903.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">林芝</span>
+									    <span class="type">跟团游</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">网红新选10人团西藏旅游拉萨布宫林芝珠峰圣象天门8天7晚跟团</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							1990
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出61件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2pi4itpXXXXbJXXXXXXXXXXXX_!!1113579208.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">拉萨</span>
+									    <span class="type">当地玩乐</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">【专线】【国企】布达拉宫大昭寺文成公主门票西藏旅游拉萨一</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							90
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出286件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2t7_TbUgQMeJjy0FeXXXOEVXa_!!279342698.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">北京</span>
+									    <span class="type">当地玩乐</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">暑假 北京旅游一日游八达岭长城鸟巢自助餐纯玩1日跟团游 晚</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							88
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出3件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2Z.dJehOMSKJjSZFlXXXqQFXa_!!2973683970.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">印度尼西亚</span>
+									    <span class="type">跟团游</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">暑期网红长沙直飞美娜多5/6天浮潜深潜半自由行单机票考证</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							2980
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出1件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<!--9排-->
+							<li>
+								<div class="item-img">
+									<img src="img/TB2xMyMlHSYBuNjSspfXXcZCpXa_!!3433659950.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">西安</span>
+									    <span class="type">跟团游</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">陕西西安旅游4天3晚观3D电影游兵马俑华清池华山明城墙跟团游</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							998
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出1件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2tMyajrBnpuFjSZFGXXX51pXa_!!2194838554.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">海南</span>
+									    <span class="type">当地玩乐</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">三亚一日游 分界洲岛户外潜水 纯玩跟团含接送潜水拍照 海南</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							298
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出1件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB24q5zeSYTBKNjSZKbXXXJ8pXa_!!3696570470.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">湘西</span>
+									    <span class="type">跟团游</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">【飞机往返】湖南长沙张家界旅游纯玩6天5晚跟团游天门山凤凰</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							2970
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出27件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2agB3cRHH8KJjy0FbXXcqlpXa_!!862434310.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">阿坝</span>
+									    <span class="type">当地玩乐</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">飞猪专线成都到毕棚沟温泉松坪沟旅游2天1晚纯玩九寨沟周边两</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							128
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出16件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2.fiFXNvxQeBjy0FdXXaybXXa_!!224591973.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">新加坡</span>
+									    <span class="type">自由行</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">飞猪专线【中青旅】新加坡旅游7天五星金沙自由行环球影城门</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							3199
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出5件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<!--10排-->
+							<li>
+								<div class="item-img">
+									<img src="img/TB29CJTeY9YBuNjy0FgXXcxcXXa_!!2935198750.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">锡林郭勒</span>
+									    <span class="type">跟团游</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">北戴河避暑山庄坝上草原乌兰布统七彩森林 6天5晚纯玩跟团游</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							1699
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出1件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB240TMhntYBeNjy1XdXXXXyVXa_!!666512320.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">苏州</span>
+									    <span class="type">跟团游</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">飞猪专线 华东五市旅游苏州杭州南京上海纯玩无购物6天5晚跟</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							958
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出2件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2ka9ZaxtnkeRjSZSgXXXAuXXa_!!3052591136.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">上海</span>
+									    <span class="type">当地玩乐</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">当天可订 上海迪士尼乐园一日游 迪斯尼 1日门票电子票2日票</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							365
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出288件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB18DJtNVXXXXbHapXXtCBg9pXX_040100.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">日本</span>
+									    <span class="type">自由行</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">上海直飞冲绳5天4晚自由行往返机票含税</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							1999
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出1件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2LS9idBcHL1JjSZFBXXaiGXXa-2521331233.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">香港</span>
+									    <span class="type">自由行</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">香港澳门旅游5天4晚自由行 迪士尼海洋公园 四星酒店 港澳游</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							2288
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出1件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<!--11排-->
+							<li>
+								<div class="item-img">
+									<img src="img/TB1QCP8LFXXXXXHXXXXptYI.pXX_104123.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">西双版纳</span>
+									    <span class="type">当地玩乐</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">西双版纳 中科院植物园一日游 勐仑植物园景区直通车 植物园</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							150
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出1件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2JodaEWmWBuNjy1XaXXXCbXXa_!!3182807682.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">泰国</span>
+									    <span class="type">自由行</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">泰国旅游普吉岛6天5晚自由行纯玩 报团送旅拍含机票普吉岛旅</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							2580
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出74件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2B2QGXnIlyKJjSZFrXXXn2VXa_!!2476368390.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">沂州</span>
+									    <span class="type">当地玩乐</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">飞猪专线山西旅游五台山大同二日游云冈石窟悬空寺纯玩跟团纯</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							150
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出1件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2diNMfgJkpuFjSszcXXXfsFXa_!!2808705334.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">青海</span>
+									    <span class="type">跟团游</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">西北旅游甘肃青海旅游青海湖敦煌新疆天池吐鲁番8日跟团游 纯</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							3380
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出2件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2NPa9dYGYBuNjy0FoXXciBFXa_!!666512320.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">黄山</span>
+									    <span class="type">自由行</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">黄山宏村旅游4天3晚 家庭商务专车自由行小包团 个性攻略有</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							1208
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出16件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<!--12排-->
+							<li>
+								<div class="item-img">
+									<img src="img/TB29sM3tpXXXXbaXpXXXXXXXXXX_!!2744795669.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">三亚</span>
+									    <span class="type">跟团游</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">三亚旅游5天4晚跟团游2+2半自助16人小团含旅拍三亚纯玩蜜月</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							1399
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出1件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2VE7VdyCYBuNkHFCcXXcHtVXa_!!2519664201.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">日喀则</span>
+									    <span class="type">跟团游</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">飞猪专线西藏旅游纯玩珠峰大本营5日游 拉萨旅游羊湖纳木措</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							2668
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出1件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2NPa9dYGYBuNjy0FoXXciBFXa_!!666512320.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">杭州</span>
+									    <span class="type">跟团游</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">飞猪专线 杭州乌镇西塘3三日华东旅游纯玩无购物【含往返高铁</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							929
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出24件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2BFsLiYSYBuNjSspiXXXNzpXa_!!2865189943.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">白山</span>
+									    <span class="type">当地玩乐</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">东北旅游多地起止长白山北坡天池2日品质跟团游豪华五星温泉</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							358
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出33件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2VnObn_nI8KJjSszgXXc8ApXa_!!2436261930.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">黔东南</span>
+									    <span class="type">跟团游</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">贵州旅游纯玩6天5晚黄果树镇远小七孔西江青龙洞舞阳河六日跟</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							1950
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出1件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<!--13排-->
+							<li>
+								<div class="item-img">
+									<img src="img/TB29wXeehmJ.eBjy0FhXXbBdFXa_!!2854975389.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">重庆</span>
+									    <span class="type">自由行</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">重庆双飞纯玩4日自由行磁器口洪崖洞旅游机票酒店赠两江夜游</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							1058
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出1件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB23056n21TBuNjy0FjXXajyXXa_!!640106288.jpg_230x230.png"/>
+									<div class="extra-info">
+									    <span class="destination">厦门</span>
+									    <span class="type">自由行</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">【端午节】厦门双飞3日自由行 宿2晚五星泛太平洋 含自助早餐</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							2729
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出1件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2oIHamxBmpuFjSZFsXXcXpFXa_!!2067413496.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">惠州</span>
+									    <span class="type">当地玩乐</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">海滩直通车广州-惠州巽寮湾2天海公园酒店山景海景房海滩旅游</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							269
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出1件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2baCGe21TBuNjy0FjXXajyXXa_!!3433659950.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">黄山</span>
+									    <span class="type">自由行</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">黄山旅游两日游2天1晚自由行 黄山山顶酒店住宿+黄山门票/自</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							388
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出1件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2KvKLpSVmpuFjSZFFXXcZApXa_!!1646817477.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">苏州</span>
+									    <span class="type">自由行</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">苏州南浔西塘乌镇杭州旅游4天3晚 家庭专车小包团 1单1车精选</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							2390
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出1件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<!--14排-->
+							<li>
+								<div class="item-img">
+									<img src="img/TB2_eR9spXXXXcwXXXXXXXXXXXX_!!2232026620.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">马尔代夫</span>
+									    <span class="type">自由行</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">飞猪专线马尔代夫旅游神仙珊瑚岛旅行六天四晚自由行蜜月酒店</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							16599
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出39件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2foMVnpXXXXX6XXXXXXXXXXXX_!!754920082.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">香港</span>
+									    <span class="type">自由行</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">香港澳门旅游5天4晚 港澳游自由行迪士尼海洋公园 五星酒店</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							3199
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出8件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB20EETdRU4h1JjSZFLXXaFMpXa_!!3332178643.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">西双版纳</span>
+									    <span class="type">跟团游</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">云南旅游跟团游纯玩团 西双版纳野象谷望天树5天4晚独立小包</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							1890
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出37件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2eeonk29TBuNjy1zbXXXpepXa_!!638737216.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">西安</span>
+									    <span class="type">当地玩乐</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">飞猪专线陕西西安旅游华山一日游纯玩跟团游含门票索道西上北</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							229
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出1337件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2trAlczgy_uJjSZR0XXaK5pXa_!!2394246851.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">黔南</span>
+									    <span class="type">跟团游</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">35人小团贵州旅游纯玩5天4晚跟团游贵阳黄果树小七孔西江千户</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							1299
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出49件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<!--16排-->
+							<li>
+								<div class="item-img">
+									<img src="img/TB1RlzUE4GYBuNjy0FniAp5lpXa_053939.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">桂林</span>
+									    <span class="type">跟团游</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">【6人私家团】漓悠悠桂林旅游漓江阳朔龙脊跟团五日游赠千古</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							2999
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出2件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2hiZqd4uTBuNkHFNRXXc9qpXa_!!2074394234.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">香港</span>
+									    <span class="type">跟团游</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">港澳旅游纯玩港澳4天3晚跟团游香港旅游海洋公园迪士尼乐园亲</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							1950
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出6件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2FJckfXooBKNjSZPhXXc2CXXa_!!2379186848.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">张家界</span>
+									    <span class="type">跟团游</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">飞猪专线 张家界旅游纯玩3天2晚VIP6人小团 天门山大峡谷玻</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							1480
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出1件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2wk0nencCL1FjSZFPXXXZgpXa_!!2995239652.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">丽江</span>
+									    <span class="type">当地玩乐</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">伯曼旅行云南印象丽江玉龙雪山纯玩一日游大索道门票蓝月谷旅</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							230
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出777件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+							<li>
+								<div class="item-img">
+									<img src="img/TB2iEZAmuOSBuNjy0FdXXbDnVXa_!!2935198750.jpg_230x230.jpg"/>
+									<div class="extra-info">
+									    <span class="destination">桂林</span>
+									    <span class="type">跟团游</span>
+								    </div>
+								</div>
+								<div class="item-info">
+		    		         					<div class="item-title">桂林旅游四日游漓江阳朔龙脊|4天3晚纯玩跟团|可升级印象/千</div>		    	         				
+		    		         					<div class="item-price">
+		    		         						<div class="li-price">
+		    		         							<em>¥</em>
+		    		         							799
+		    		         							<span id="qi">起</span>
+		    		         						</div>
+		    		         						<div class="item-sales">
+		    		         							30天售出1件
+		    		         						</div>
+		    		         					</div>
+		    		         				</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		    </div>
+		</div>
+		<!--飞猪3.结尾部分-->
+		<div class="footer">
+			<div class="trip-footer">
+				<!--上 旅行产品 新手上路-->
+				<div class="footer-de">
+					<!--1旅行产品-->
+					<div class="footer-item">
+						<dl>
+							<dt>旅行产品</dt>
+							<dd>
+								<span class="link-item"><a href="">国内机票</a></span>
+								<span class="link-item"><a href="">国际机票</a></span>
+								<span class="link-item"><a href="">酒店预订</a></span>
+								<span class="link-item"><a href="">客栈公寓</a></span>
+								<span class="link-item"><a href="">旅游度假</a></span>
+								<span class="link-item"><a href="">景点门票</a></span>
+							</dd>
+						</dl>
+					</div>
+					<!--2新手上路-->
+					<div class="footer-item">
+						<dl>
+							<dt>新手上路</dt>
+							<dd>
+								<span class="link-item"><a href="">开通支付宝</a></span>
+								<span class="link-item"><a href="">免费注册</a></span>
+								<span class="link-item"><a href="">退票改签</a></span>
+								<span class="link-item"><a href="">7*24小时在线帮助</a></span>
+								<span class="link-item"><a href="">飞猪APP</a></span>
+							</dd>
+						</dl>
+					</div>
+					<!--3商家服务-->
+					<div class="footer-item">
+						<dl>
+							<dt>商家服务</dt>
+							<dd>
+								<span class="link-item"><a href="">商家入驻</a></span>
+								<span class="link-item"><a href="">商家培训</a></span>
+								<span class="link-item"><a href="">帮派互动</a></span>
+								<span class="link-item"><a href="">规则中心</a></span>
+								<span class="link-item"><a href="">规则意见征集</a></span>
+								<span class="link-item"><a href="">商家在线客服</a></span>
+								<span class="link-item"><a href="">第三方合作</a></span>
+							</dd>
+						</dl>
+					</div>
+					<!--4放心出行-->
+					<div class="footer-item">
+						<img src="img/TB1kJyKHVzqK1RjSZSgXXcpAVXa-393-81.png"/>
+					</div>
+				</div>
+				<!--下 阿里巴巴集团-->
+				<div class="footer-pe">
+					<!--1-->
+					<div class="footer-ali">
+						<a href="">阿里巴巴集团</a>
+						<b>|</b>
+						<a href="">廉正举报</a>
+						<b>|</b>
+						<a href="">淘宝网</a>
+						<b>|</b>
+						<a href="">天猫</a>
+						<b>|</b>
+						<a href="">聚划算</a>
+						<b>|</b>
+						<a href="">全球速卖通</a>
+						<b>|</b>
+						<a href="">阿里巴巴国际交易市场</a>
+						<b>|</b>
+						<a href="">1688</a>
+						<b>|</b>
+						<a href="">阿里妈妈</a>
+						<b>|</b>
+						<a href="">飞猪</a>
+						<b>|</b>
+						<a href="">阿里云计算</a>
+						<b>|</b>
+						<a href="">AliOS</a>
+						<b>|</b>
+						<a href="">阿里通信</a>
+						<b>|</b>
+						<a href="">万网</a>
+						<b>|</b>
+						<a href="">高德</a>
+						<b>|</b>
+						<a href="">UC</a>
+						<b>|</b>
+						<a href="">友盟</a>
+						<b>|</b>
+						<a href="">虾米</a>
+						<b>|</b>
+						<a href="">钉钉</a>
+						<b>|</b>
+						<a href="">支付宝</a>
+						<b>|</b>
+						<a href="">阿里游戏</a>
+					</div>
+					<!--2-->
+					<div class="footer-nav">
+						<a href="">关于淘宝</a>
+						<a href="">合作伙伴</a>
+						<a href="">营销中心</a>
+						<a href="">联系客服</a>
+						<a href="">开放平台</a>
+						<a href="">诚征英才</a>
+						<a href="">联系我们</a>
+						<a href="">网站地图</a>
+						<a href="">隐私政策</a>
+						<span>© Fliggy.com版权所有</span>
+					</div>
+					<!--3-->
+					<div class="footer-copy">
+						<span>增值电信业务经营许可证：浙B2-20160773</span>
+					</div>
+					<!--4-->
+					<div class="footer-copy">
+						<span>国际航协国内客运代理人资格证书：HO08-3 3468 6</span>
+					</div>
+					<!--5-->
+					<div style="width: 73px;" class="footer-me">
+						<img src="img/TB1QcEBPXXXXXa.apXXXXXXXXXX-65-70.gif"/>
+					</div>
+					<!--6-->
+					<div style="margin: 0 auto;" class="footer-ne">
+						<img src="img/TB17Ss8ASBYBeNjy0FeXXbnmFXa-20-20.png"/>
+						 <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">浙公网安备 33011002013439号</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
